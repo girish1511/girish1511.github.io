@@ -313,7 +313,7 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Ganesan]
+  last_name: ["Ganesan", "Ganesan*"]
   first_name: [Girish Chandar G]
 
   style: apa
