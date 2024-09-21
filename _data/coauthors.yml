@@ -1,6 +1,10 @@
 "shengjie":
-  - firstname: [Shengjie]
+  - firstname: ["Shengjie"]
     url: https://shngjz.github.io/
+
+"abhinav":
+  - firstname: ["Abhinav"]
+    url: https://sites.google.com/view/abhinavkumar
 
 # "podolsky":
 #   - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
