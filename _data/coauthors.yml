@@ -6,33 +6,37 @@
   - firstname: ["Abhinav"]
     url: https://sites.google.com/view/abhinavkumar
 
-# "podolsky":
-#   - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-#     url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"adams":
+  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
+    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
 
-# "rosen":
-#   - firstname: ["Nathan", "N."]
-#     url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"podolsky":
+  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
+    url: https://en.wikipedia.org/wiki/Boris_Podolsky
 
-# "bach":
-#   - firstname: ["Johann Sebastian", "J. S."]
-#     url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"rosen":
+  - firstname: ["Nathan", "N."]
+    url: https://en.wikipedia.org/wiki/Nathan_Rosen
 
-#   - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-#     url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"bach":
+  - firstname: ["Johann Sebastian", "J. S."]
+    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
 
-# "przibram":
-#   - firstname: ["Karl"]
-#     url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
+    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
 
-# "schrodinger":
-#   - firstname: ["Erwin"]
-#     url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"przibram":
+  - firstname: ["Karl"]
+    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
 
-# "lorentz":
-#   - firstname: ["Hendrik Antoon"]
-#     url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+"schrodinger":
+  - firstname: ["Erwin"]
+    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
 
-# "planck":
-#   - firstname: ["Max"]
-#     url: https://en.wikipedia.org/wiki/Max_Planck
+"lorentz":
+  - firstname: ["Hendrik Antoon"]
+    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+
+"planck":
+  - firstname: ["Max"]
+    url: https://en.wikipedia.org/wiki/Max_Planck
