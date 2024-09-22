@@ -1,8 +1,7 @@
 ---
-layout: page
-permalink: assets/pdf/example_pdf.pdf
+layout: post
+permalink: cv.pdf
 title: cv
 nav: true
-nav_order: 3
-cv_pdf: example_pdf.pdf
+nav_order: 5
 ---
