@@ -18,7 +18,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I'm a PhD student in the [Computer Vision Lab](http://cvlab.cse.msu.edu/) at Michigan State University, where I am advised by [Dr. Xiaoming Liu](https://scholar.google.com/citations?hl=en&user=Bii0w1oAAAAJ). My research interests are in 3D Computer Vision, focusing on 3D reconstruction and generation.
+I'm a PhD student in the [Computer Vision Lab](http://cvlab.cse.msu.edu/) at Michigan State University, where I am advised by [Dr. Xiaoming Liu](https://scholar.google.com/citations?hl=en&user=Bii0w1oAAAAJ). My research interests are in 3D Computer Vision, focusing on Generalizable Monocular Depth Estimation, 3D Reconstruction and Generation.
 
 I spent the Summer of 2022 in the Autonomous Perception Team at NVIDIA working with [Dr. Yang Zheng](https://www.linkedin.com/in/yang-zheng-42891863/) on Stereo Hazard Detection.
 
