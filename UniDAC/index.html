@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UniDAC</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>UniDAC: Unified Depth Estimation for Any Camera</h1>
+
+    <div class="authors">
+      Girish G · Author 2 · Author 3
+    </div>
+
+    <div class="affiliations">
+      Michigan State University
+    </div>
+
+    <div class="buttons">
+      <a href="#">📄 Paper</a>
+      <a href="#">💻 Code</a>
+      <a href="#">🎥 Video</a>
+      <a href="#">📊 Dataset</a>
+    </div>
+  </section>
+
+  <!-- TEASER -->
+  <section>
+    <img src="assets/teaser.jpg" class="full-img">
+    <p class="caption">
+      UniDAC generalizes metric depth across perspective, fisheye, and 360° cameras.
+    </p>
+  </section>
+
+  <!-- ABSTRACT -->
+  <section>
+    <h2>Abstract</h2>
+    <p>
+      We propose UniDAC, a unified framework for metric depth estimation across diverse camera models.
+      By decoupling relative depth and scale estimation, our method generalizes across camera domains,
+      including fisheye and equirectangular projections.
+    </p>
+  </section>
+
+  <!-- METHOD -->
+  <section>
+    <h2>Method</h2>
+    <img src="assets/pipeline.jpg" class="full-img">
+    <p class="caption">Overview of UniDAC.</p>
+  </section>
+
+  <!-- COMPARISON -->
+  <section>
+    <h2>Qualitative Comparisons</h2>
+
+    <div class="slider-container">
+      <div class="slider">
+        <img src="assets/comparisons/rgb.jpg" class="img-base">
+        <img src="assets/comparisons/pred.jpg" class="img-overlay" id="overlay">
+
+        <div class="divider" id="divider"></div>
+        <input type="range" min="0" max="100" value="50" class="range" id="range">
+      </div>
+    </div>
+
+    <p class="caption">Drag the slider to compare input vs predicted depth.</p>
+  </section>
+
+  <!-- CITATION -->
+  <section>
+    <h2>Citation</h2>
+<pre>
+@inproceedings{unidac2026,
+  title={UniDAC: Unified Depth Estimation for Any Camera},
+  author={...},
+  booktitle={CVPR},
+  year={2026}
+}
+</pre>
+  </section>
+
+</div>
+
+<script>
+const range = document.getElementById("range");
+const overlay = document.getElementById("overlay");
+const divider = document.getElementById("divider");
+
+range.addEventListener("input", () => {
+  const value = range.value;
+
+  overlay.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
+  divider.style.left = value + "%";
+});
+</script>
+
+</body>
+</html>
