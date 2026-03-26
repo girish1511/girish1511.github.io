@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){function e(e){t.forEach((n,t)=>{n.style.display=t===e?"block":"none"})}var n=0,t=document.querySelectorAll(".image"),c=t.length;document.getElementById("next").addEventListener("click",function(){e(n=(n+1)%c)}),document.getElementById("prev").addEventListener("click",function(){e(n=(n-1+c)%c)}),e(n)});
