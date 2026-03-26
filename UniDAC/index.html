@@ -1,109 +1,364 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=0.2">
+  <meta charset="utf-8">
+  <meta name="description"
+        content="UniDAC">
+  <meta name="keywords" content="Monocular Depth Estimation">
   <title>UniDAC</title>
 
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <!-- Academicons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-</head>
 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bulma.min.css">
+  <link rel="stylesheet" href="css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="css/bulma-slider.min.css">
+  <link rel="stylesheet" href="css/fontawesome.all.min.css">
+
+
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="icon" href="img/Logo.jpg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="js/fontawesome.all.min.js"></script>
+  <script src="js/bulma-carousel.min.js"></script>
+  <script src="js/bulma-slider.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/script.js"></script>
+</head>
 <body>
 
-<div class="container">
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+</nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1>UniDAC: Unified Depth Estimation for Any Camera</h1>
 
-    <div class="authors">
-    <a href="https://girish1511.github.io/">Girish Chandar Ganesan</a><sup>1</sup> · <a href="https://yuliangguo.github.io/">Yuliang Guo</a><sup>2</sup> · <a href="https://sites.google.com/site/liurenshomepage/">Liu Ren</a><sup>2</sup> · <a href="https://scholar.google.com/citations?hl=en&user=Bii0w1oAAAAJ">Xiaoming Liu</a><sup>1</sup>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title"><img id="painting_icon" width="8%" src="assets/fisheye.png" style="vertical-align: middle; margin-right: 0px; position: relative; top: -2px;"> UniDAC <img id="painting_icon" width="6%" src="assets/360.png" style="vertical-align: middle; margin-right: 0px; position: relative; top: -2px;"></h1>
+          <h1 class="title is-2 publication-title">Universal Metric Depth Estimation for Any Camera</h1>
+
+          <div class="is-size-5 publication-authors">
+            <br>
+            <span class="author-block">
+              <a href="https://girish1511.github.io/">Girish Chandar Ganesan</a><sup>1</sup></a>&nbsp</a>&nbsp</a>&nbsp
+            </span>
+            <span class="author-block">
+              <a href="https://yuliangguo.github.io/">Yuliang Guo</a><sup>2</sup></a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp  
+            </span>
+            <span class="author-block">
+              <a href="https://www.liu-ren.com/">Liu Ren</a><sup>2</sup></a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=Bii0w1oAAAAJ&hl=en">Xiaoming Liu</a><sup>1</sup></a>&nbsp</a>&nbsp</a>&nbsp
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors" style="vertical-align: middle;">
+            <span class="author-block"><sup>1</sup>Michigan State University</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</span>
+            <span class="author-block"><sup>2</sup>Bosch Research North America</span>
+          </div>
+
+          <!-- <div class="is-size-6 publication-authors">
+            <span class="author-block">* Corresponding author</span> </a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp
+            <span class="author-block">&dagger; Equal technical contribution</span>
+          </div> -->
+
+          <div class="column has-text-centered">
+            <div class="is-size-4 publication-authors">
+              <span class="author-block"><b>CVPR 2026</b></span>
+            </div>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/girish1511/UniDAC" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+</section>
 
-    <div class="affiliations">
-      <sup>1</sup> Michigan State University, <sup>2</sup> Bosch Research North America
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body is-centered">
+      <img id="teaser" width="75%" class="center" src=""/>
     </div>
+  </div>
+</section>
 
-    <div class="buttons">
-      <a href="#">📄 Paper</a>
-      <a href="https://github.com/girish1511/UniDAC"><i class="fa-brands fa-github"></i> Code </a>
-      <!-- <a href="#">🎥 Video</a>
-      <a href="#">📊 Dataset</a> -->
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h4 class="subtitle has-text-centered">
+        <div class="content has-text-justified"> 
+          <p>
+            <b>Depth Any Camera (DAC)</b> is a powerful Zero-Shot Metric Depth Estimation framework that extends a perspective-trained model to handle any type of camera with varying FoVs. 
+            Tired of collecting new data and annotations for every new camera type? DAC allows you to leverage existing data, ensuring that <b>every piece of previously collected 3D data valuable</b>, regardless of the camera type used in a new application.
+            Key features includes:
+            <ul type="1">
+              <li><b>Trained exclusively on perspective images</b>, yet it generalizes seamlessly to <b>fisheye</b> and <b>360</b> cameras without requiring specialized training data.</li>
+              <li><b>Zero-shot metric</b> depth estimation on <b>fisheye</b> and <b>360</b> images, significantly outperforming prior metric depth SoTA <a href="https://jugghm.github.io/Metric3Dv2/" target="_blank">Metric3D-v2</a> and <a href="https://github.com/lpiccinelli-eth/UniDepth/tree/main" target="_blank">UniDepth</a></span></li>
+              <li>Geometry-focused training framework <b>adaptable to any network architecture</b>, extendable to <b>other 3D perception tasks</b></span></li>
+            </ul>
+          </p>
+          <p>
+          </p>
+        </div>
+        <div class="image-area">
+            <img src="img/videos/dac_core_designs.gif" alt="designs" width="100%" class="center">
+          </div>
+      </h4>
+      
+    </div>
+  </div>
+</section>
+
+
+<!-- <section class="section"  style="margin-top: 0; padding-top: 50px;">
+    <h2 class="title is-4" style="text-align: center;"> Demonstrations on Fisheye Videos and 360<sup>o</sup> Singe-View Reconstruction</h2>
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <p>
+            The zero-shot metric depth estimation results of Depth Any Camera (DAC) are visualized on ScanNet++ fisheye videos and compared to Metric3D-v2. The visualizations of A.Rel error against ground truth highlight the superior performance of DAC. 
+            Additionally, we showcase DAC's application on 360-degree images, where a single forward pass of depth estimation enables full 3D scene reconstruction.
+          </p><br>
+          <video poster="" id="ade" autoplay controls muted loop playsinline height="80%">
+            <source src="img/videos/video_scannet++_1.mov"
+                    type="video/mp4">
+          </video>
+          <video poster="" id="ade" autoplay controls muted loop playsinline height="80%">
+            <source src="img/videos/video_scannet++_2.mov"
+                    type="video/mp4">
+          </video>
+          <video poster="" id="ade" autoplay controls muted loop playsinline height="100%">
+            <source src="img/videos/video_matterport3d_1.mov"
+                    type="video/mp4">
+          </video>
+          <video poster="" id="ade" autoplay controls muted loop playsinline height="100%">
+            <source src="img/videos/video_matterport3d_2.mov"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- TEASER -->
-  <section>
-    <!-- <img src="assets/teaser.jpg" class="full-img"> -->
-    <p>
-      UniDAC generalizes metric depth across perspective, fisheye, and 360° cameras.
-    </p>
-  </section>
 
-  <!-- ABSTRACT -->
-  <section>
-    <h2>Abstract</h2>
-    <p>
-      Monocular metric depth estimation (MMDE) is a core challenge in computer vision, playing a pivotal role in real world applications that demand accurate spatial understanding. Although prior works have shown promising zeroshot performance in MMDE, they often struggle with generalization across diverse camera types, such as fisheye and 360◦ cameras. Recent advances have addressed this through unified camera representations or canonical representation spaces, but they require either including large-FoV camera data during training or separately trained models for different domains. We propose UniDAC, an MMDE framework that presents universal robustness in all domains and generalizes across diverse cameras using a single model. We achieve this by decoupling metric depth estimation into relative depth prediction and spatially varying scale estimation, enabling robust performance across different domains. We propose a lightweight Depth-Guided Scale Estimation module that upsamples a coarse scale map to high resolution using the relative depth map as guidance to account for local scale variations. Furthermore, we introduce RoPE-ϕ, a distortion-aware positional embedding that respects the spatial warping in Equi-Rectangular Projections (ERP) via latitude-aware weighting. UniDAC achieves state-of-the-art (SoTA) in cross-camera generalization by consistently outperforming prior methods across all datasets.
-    </p>
-  </section>
+<section class="section"  style="margin-top: 0; padding-top: 50px;">
+  <h2 class="title is-4" style="text-align: center;"> Fisheye Depth Estimation on ZipNeRF for Neural Reconstruction</h2>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <p>
+            To support the development of 3D Neural Reconstruction methods such as NeRF and Gaussian Splatting on fisheye inputs, we provide DAC's depth estimation results on ZipNeRF for fisheye images. 
+            The depth maps are available for download at <a href="https://huggingface.co/yuliangguo/depth-any-camera/blob/main/zipnerf_dac_swinl_indoor_2025_01.zip" target="_blank">Fisheye Depth ZipNeRF</a> and <a href="https://huggingface.co/yuliangguo/depth-any-camera/blob/main/scannetpp_dac_swinl_indoor_2025_01.zip" target="_blank">Fisheye Depth ScanNet++</a>.
+            Emerging neural reconstruction methods capable of handling large FoV inputs, such as <a href="https://smerf-3d.github.io/" target="_blank">SMERF</a>, <a href="https://github.com/zmliao/Fisheye-GS" target="_blank">Fisheye-GS</a>, and <a href="https://github.com/half-potato/ever_training" target="_blank">EVER</a>, are expected to benefit from the fisheye depth prior.
+        </p><br>
+        <div class="image-area" style="text-align: center;">
+          <img src="img/videos/zipnerf_fisheye_alameda.gif" width="80%">
+        </div>
+        <div class="image-area" style="text-align: center;">
+          <img src="img/videos/zipnerf_fisheye_berlin.gif" width="80%">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <!-- METHOD -->
-  <section>
-    <h2>Method</h2>
-    <img src="assets/pipeline.png" class="full-img">
-    <p class="caption">Overview of UniDAC.</p>
-  </section>
 
-  <!-- COMPARISON -->
-  <section>
-    <h2>Qualitative Comparisons</h2>
+<section class="hero is-small" style="margin-top: 30px; padding-top: 0px;">
+  <h2 class="title is-4" style="text-align: center;">Visual comparison to <a href="https://jugghm.github.io/Metric3Dv2/" target="_blank">Metric3D-v2</a> and <a href="https://github.com/lpiccinelli-eth/UniDepth/tree/main" target="_blank">UniDepth</a></h2>
+  <div class="hero-body">
+    
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <img src="img/dac_vis_web_1.png" alt="Steve GIF" width="100%">
+        </div>
 
-    <div class="slider-container">
-      <div class="slider">
-        <img src="assets/comparisons/rgb.jpg" class="img-base">
-        <img src="assets/comparisons/pred.jpg" class="img-overlay" id="overlay">
+        <div class="item item-steve">
+            <img src="img/dac_vis_web_2.png" alt="Steve GIF" width="100%">
+        </div>
 
-        <div class="divider" id="divider"></div>
-        <input type="range" min="0" max="100" value="50" class="range" id="range">
+        <!- <div class="item item-steve">
+            <img src="img/dac_vis_web_3.png" alt="Steve GIF" width="100%">
+        </div> -!>
+
+        <div class="item item-steve">
+            <img src="img/dac_vis_web_4.png" alt="Steve GIF" width="100%">
+        </div>
+    </div>
+    
+  </div>
+</section> -->
+
+
+<!-- <section class="section" style="background-color:#efeff081"> -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-4">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Monocular metric depth estimation (MMDE) is a core challenge in computer vision, playing a pivotal role in real world applications that demand accurate spatial understanding.
+            Although prior works have shown promising zeroshot performance in MMDE, they often struggle with generalization across diverse camera types, such as fisheye and 360<sup>&deg;</sup> cameras.
+            Recent advances have addressed this through unified camera representations or canonical representation spaces, but they require either including large-FoV camera data during training or separately trained models for different domains.
+            We propose UniDAC, an MMDE framework that presents universal robustness in all domains and generalizes across diverse cameras using a single model.
+            We achieve this by decoupling metric depth estimation into relative depth prediction and spatially varying scale estimation, enabling robust performance across different domains.
+            We propose a lightweight Depth-Guided Scale Estimation module that upsamples a coarse scale map to high resolution using the relative depth map as guidance to account for local scale variations.
+            Furthermore, we introduce RoPE-&phi;, a distortion-aware positional embedding that respects the spatial warping in Equi-Rectangular Projections (ERP) via latitude-aware weighting. UniDAC achieves state-of-the-art (SoTA) in cross-camera generalization by consistently outperforming prior methods across all datasets.
+          </p>
+        </div>
       </div>
     </div>
 
-    <p class="caption">Drag the slider to compare input vs predicted depth.</p>
-  </section>
+  </div>
+</section>
 
-  <!-- CITATION -->
-  <section>
-    <h2>Citation</h2>
-<pre>
-@inproceedings{unidac2026,
-  title={UniDAC: Unified Depth Estimation for Any Camera},
-  author={...},
-  booktitle={CVPR},
-  year={2026}
-}
-</pre>
-  </section>
 
-</div>
+<!-- <section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-4" style="text-align: center;">Data Coverage</h2>
+          <div class="content has-text-justified">
+            <p>
+              DAC is trained on a combination set of 3 labeled datasets (670k images) for indoor model and a combination of 2 datasets (130k) for outdoor model. Two 360 datasets and two fisheye datasets are used for zero-shot testing.
+            </p>
+          </div>
 
-<script>
-const range = document.getElementById("range");
-const overlay = document.getElementById("overlay");
-const divider = document.getElementById("divider");
+          <div class="image-area">
+            <img src="img/table_data_coverage.png" alt="pipeline" width="100%" class="center">
+          </div>
+</section> -->
 
-range.addEventListener("input", () => {
-  const value = range.value;
 
-  overlay.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
-  divider.style.left = value + "%";
-});
-</script>
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-4" style="text-align: center;">Framework</h2>
+        <div class="content has-text-justified">
+          <p>
+            UniDAC decouples metric depth estimation into relative depth and scale where relative depth captures local scene structure while scale models global, domain-specific variations.
+            The estimated features of the input ERP image is split into local and global features, where the former is utilized for relative depth estimation and the latter for scale estimation.
+            We predict a scale map to account for irregularities in the predicted relativ depth using the proposed Depth-Guided Scale (DGS) module.
+            Additionally, we introduce distortion-aware positional encoding (RoPE-&phi;), which applies latitude-dependent weighting to RoPE for a better representation of the ERP geometry.
+            The final metric depth is obtained by combining relative depth and scale, optimized via dedicated losses.
+          </p>
+        </div>
+
+        <div class="image-area">
+          <img src="assets/pipeline.png" alt="pipeline" width="100%">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-4" style="text-align: center;">Zero-shot Metric Depth Estimation</h2>
+          <div class="content has-text-justified">
+            <p>
+              UniDAC is a unified model that achieves state-of-the-art cross-camera generalization, outperforming prior methods trained on perspective images including UniDepth, Metric3D-v2, and DAC across both indoor and outdoor datasets.
+              Notably, UniDAC also outperforms UniK3D despite the latter being trained on large FoV images, highlighting the strong generalization capability of UniDAC.
+            </p>
+          </div>
+
+          <div class="image-area">
+            <img src="assets/table_compare_sota.png" alt="pipeline" width="100%">
+          </div>
+</section>
+
+
+
+
+<section class="section pt-0" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-4">Citation</h2>
+    <pre class="selectable"><code>@inproceedings</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/girish1511/UniDAC" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="content">
+        <p>
+          The template is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
