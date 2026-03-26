@@ -141,14 +141,16 @@
       <h4 class="subtitle has-text-centered">
         <div class="content has-text-justified"> 
           <p>
-            <b>Depth Any Camera (DAC)</b> is a powerful Zero-Shot Metric Depth Estimation framework that extends a perspective-trained model to handle any type of camera with varying FoVs. 
-            Tired of collecting new data and annotations for every new camera type? DAC allows you to leverage existing data, ensuring that <b>every piece of previously collected 3D data valuable</b>, regardless of the camera type used in a new application.
-            Key features includes:
+            UniDAC is a <b>unified monocular metric depth estimation framework</b> that generalizes across diverse camera types, including perspective, fisheye, and 360<sup>&deg;</sup> cameras, using a single model.
+            Unlike prior approaches that require large-FoV training data or separate models for different domains, UniDAC achieves <b>robust cross-camera generalization</b> through a simple yet effective design.
+            Key features include:
             <ul type="1">
-              <li><b>Trained exclusively on perspective images</b>, yet it generalizes seamlessly to <b>fisheye</b> and <b>360</b> cameras without requiring specialized training data.</li>
-              <li><b>Zero-shot metric</b> depth estimation on <b>fisheye</b> and <b>360</b> images, significantly outperforming prior metric depth SoTA <a href="https://jugghm.github.io/Metric3Dv2/" target="_blank">Metric3D-v2</a> and <a href="https://github.com/lpiccinelli-eth/UniDepth/tree/main" target="_blank">UniDepth</a></span></li>
-              <li>Geometry-focused training framework <b>adaptable to any network architecture</b>, extendable to <b>other 3D perception tasks</b></span></li>
+              <li><b>Decoupled metric depth estimation:</b> UniDAC separates metric depth into relative depth and spatially varying scale, enabling robust generalization across camera domains.</li>
+              <li><b>Depth-Guided Scale (DGS):</b> A lightweight module that upsamples a coarse scale map while preserving object boundaries using relative depth guidance.</li>
+              <li><b>Distortion-aware encoding (RoPE-&phi;):</b> A positional encoding that accounts for ERP geometry via latitude-dependent weighting, improving performance on large-FoV images.</li>
             </ul>
+            UniDAC achieves state-of-the-art cross-camera generalization, consistently outperforming prior methods across both indoor and outdoor datasets, namel.
+            
           </p>
           <p>
           </p>
