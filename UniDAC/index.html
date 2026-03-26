@@ -45,9 +45,7 @@
   <section>
     <h2>Abstract</h2>
     <p>
-      We propose UniDAC, a unified framework for metric depth estimation across diverse camera models.
-      By decoupling relative depth and scale estimation, our method generalizes across camera domains,
-      including fisheye and equirectangular projections.
+      Monocular metric depth estimation (MMDE) is a core challenge in computer vision, playing a pivotal role in real world applications that demand accurate spatial understanding. Although prior works have shown promising zeroshot performance in MMDE, they often struggle with generalization across diverse camera types, such as fisheye and 360◦ cameras. Recent advances have addressed this through unified camera representations or canonical representation spaces, but they require either including large-FoV camera data during training or separately trained models for different domains. We propose UniDAC, an MMDE framework that presents universal robustness in all domains and generalizes across diverse cameras using a single model. We achieve this by decoupling metric depth estimation into relative depth prediction and spatially varying scale estimation, enabling robust performance across different domains. We propose a lightweight Depth-Guided Scale Estimation module that upsamples a coarse scale map to high resolution using the relative depth map as guidance to account for local scale variations. Furthermore, we introduce RoPE-ϕ, a distortion-aware positional embedding that respects the spatial warping in Equi-Rectangular Projections (ERP) via latitude-aware weighting. UniDAC achieves state-of-the-art (SoTA) in cross-camera generalization by consistently outperforming prior methods across all datasets.
     </p>
   </section>
 
